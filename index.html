@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Steel Beam Designer</title>
+
+        <link href="style/style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <div class="d-flex" id="wrapper">
+
+            <div id="page-content-wrapper">
+
+
+                <div class="container-fluid">
+                    <h2>Steel Beam Designer</h2>
+                    <div class="column">
+                        <form id="myForm">
+                            <h3>Section Properties</h3>
+                            <p>Data available at - <a href="https://www.steelforlifebluebook.co.uk/ub/ec3-ukna/section-properties-dimensions-properties">Blue Book</a></p>
+
+                            <div id="data-container">
+                                
+                            </div>
+
+                            <label for="sectionSelect">Choose a section: </label>
+                            <select id="sectionSelect" name="sectionSelect"required>
+                                <option value""" disabled selected>Select a section</option>
+                            </select> <br> <br>
+
+                            <label for="gradeSelect">Choose a steel grade, f<sub>y</sub>: </label>
+                            <select id="gradeSelect" name="grades" required>
+                                <option value""" disabled selected>Select a grade</option>
+                                <option value=235>235</option>
+                                <option value=275>275</option>
+                                <option value=355>355</option>
+                            </select> 
+                            <label>N/mm<sup>2</sup></label><br><br>
+    
+                            <h3>Design Loading</h3>
+                            <label for="sheary">Enter applied shear (major-axis), V<sub>y</sub> </label>
+                            <input type="number" id="sheary" name="sheary" placeholder="Enter a value" required>
+                            <label>kN</label><br><br>
+
+                            <label for="shearz">Enter applied shear (minor-axis), V<sub>z</sub> </label>
+                            <input type="number" id="shearz" name="shearz" placeholder="Enter a value" required>
+                            <label>kN</label><br><br>
+    
+                            <label for="momenty">Enter applied moment (major-axis), M<sub>y</sub> </label>
+                            <input type="number" id="momenty" name="momenty" placeholder="Enter a value" required>
+                            <label>kNm</label><br><br>
+
+                            <label for="momentz">Enter applied moment (minor-axis), M<sub>z</sub> </label>
+                            <input type="number" id="momentz" name="momentz" placeholder="Enter a value" required>
+                            <label>kNm</label><br><br>
+    
+                            <button class="btn btn-primary" type="button" id="calculateButton">Calculate</button> <br>
+                        </form>
+                    </div>
+
+                    <div class="results">
+                        <p id="results"></p>
+                    </div> 
+
+           
+
+                </div>
+
+
+       
+            </div>
+
+
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="fetch.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
