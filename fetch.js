@@ -11,7 +11,7 @@ fetch('data.json')
     beamData = data; //storing the data as a global variable for script.js to access
     console.log(data); 
 
-    /* Find the container in the html
+    // Find the container in the html
     const container = document.getElementById('data-container');
     const sectionSelect = document.getElementById('sectionSelect')
 
@@ -43,4 +43,4 @@ fetch('data.json')
 
   .catch(error => {
     console.error('There has been a problem with your fetch operation:', error);
-  */ });
+   });
