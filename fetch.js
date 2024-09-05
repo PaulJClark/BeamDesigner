@@ -16,10 +16,10 @@ fetch('data.json')
     const sectionSelect = document.getElementById('sectionSelect')
 
     //Create a string of HTML to insert
-    let htmlContent = '<table> <tr> <th>Section</th> <th>Depth <br> h (mm) </th> <th>Width<br>b (mm) </th> <th>Mass<br> m (kg/m) </th> <th>Elastic modulus y-y<br> W<sub>ely</sub> (cm<sup>3</sup>) <th>Elastic modulus z-z<br> W<sub>elz</sub> (cm<sup>3</sup>) <th>Plastic modulus y-y<br> W<sub>ply</sub> (cm<sup>3</sup>) <th>Plastic modulus z-z<br> W<sub>plz</sub> (cm<sup>3</sup>) ';
+    //let htmlContent = '<table> <tr> <th>Section</th> <th>Depth <br> h (mm) </th> <th>Width<br>b (mm) </th> <th>Mass<br> m (kg/m) </th> <th>Elastic modulus y-y<br> W<sub>ely</sub> (cm<sup>3</sup>) <th>Elastic modulus z-z<br> W<sub>elz</sub> (cm<sup>3</sup>) <th>Plastic modulus y-y<br> W<sub>ply</sub> (cm<sup>3</sup>) <th>Plastic modulus z-z<br> W<sub>plz</sub> (cm<sup>3</sup>) ';
     data.forEach(item => {
       // create data table for steel sections
-        htmlContent += `<tr>
+        //htmlContent += `<tr>
                             //<td>${item.section}</td>
                             //<td>${item.depth}</td>
                             <td>${item.width}</td>
