@@ -22,13 +22,13 @@ fetch('data.json')
         //htmlContent += `<tr>
                             //<td>${item.section}</td>
                             //<td>${item.depth}</td>
-                            <td>${item.width}</td>
-                            <td>${item.mass}</td>
-                            <td>${item.elasticmodulusy}</td>
-                            <td>${item.elasticmodulusz}</td>
-                            <td>${item.plasticmodulusy}</td>
-                            <td>${item.plasticmodulusz}</td>
-                        </tr>`
+                            //<td>${item.width}</td>
+                            //<td>${item.mass}</td>
+                            //<td>${item.elasticmodulusy}</td>
+                            //<td>${item.elasticmodulusz}</td>
+                            //<td>${item.plasticmodulusy}</td>
+                            //<td>${item.plasticmodulusz}</td>
+                        //</tr>`
         const option = document.createElement('option');
         option.value = item.section;
         option.textContent = item.section;
